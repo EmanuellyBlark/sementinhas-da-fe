@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Sementinhas da Fé — Kit de Atividades Bíblicas para Crianças</title>
+<meta name="description" content="Kit com mais de 400 atividades bíblicas para tirar seus filhos da tela e colocar a Bíblia na rotina da família. De R$97 por R$29,90, com garantia de 7 dias.">
+<meta name="theme-color" content="#1b2a6b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sementinhas da Fé — Kit de Atividades Bíblicas para Crianças">
+<meta property="og:description" content="Kit com mais de 400 atividades bíblicas para tirar seus filhos da tela e colocar a Bíblia na rotina da família. De R$97 por R$29,90, com garantia de 7 dias.">
+<meta property="og:image" content="assets/hero-800.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sementinhas da Fé — Kit de Atividades Bíblicas para Crianças">
+<meta name="twitter:description" content="Kit com mais de 400 atividades bíblicas para tirar seus filhos da tela e colocar a Bíblia na rotina da família. De R$97 por R$29,90, com garantia de 7 dias.">
+<meta name="twitter:image" content="assets/hero-800.jpg">
+<link rel="preload" as="image" href="assets/hero-800.jpg" imagesrcset="assets/hero-480.jpg 480w, assets/hero-800.jpg 800w, assets/hero-1024.jpg 1024w" imagesizes="(max-width: 880px) 260px, 400px" fetchpriority="high">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-64.png" sizes="64x64" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#141b4d;
+    --navy:#1b2a6b;
+    --royal:#2b3fa8;
+    --grape:#6c2bd9;
+    --grape-deep:#4c1996;
+    --yellow:#ffce1b;
+    --orange:#ff7a1a;
+    --pink:#ff4f93;
+    --green:#2fc46b;
+    --cream:#fffdf6;
+    --line:rgba(255,255,255,.14);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Nunito',sans-serif;
+    background: radial-gradient(ellipse at 20% 0%, #24338f 0%, var(--navy) 45%, var(--ink) 100%);
+    color:var(--cream);
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.display{font-family:'Baloo 2', cursive; line-height:1.08; margin:0;}
+  p{line-height:1.6;}
+  img{max-width:100%;display:block;}
+  a{text-decoration:none;color:inherit;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+  .center{text-align:center;}
+
+  /* ---------- NAV ---------- */
+  .nav{position:sticky;top:0;z-index:50;background:rgba(20,27,77,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;}
+  .logo{font-family:'Baloo 2',cursive;font-weight:800;font-size:21px;display:flex;gap:8px;align-items:center;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    font-family:'Baloo 2',cursive;font-weight:700;font-size:16px;
+    padding:15px 30px;border-radius:999px;border:none;cursor:pointer;
+    box-shadow:0 8px 0 rgba(0,0,0,.18);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn:focus-visible,
+  .faq-q:focus-visible,
+  a:focus-visible{
+    outline:3px solid var(--yellow);
+    outline-offset:3px;
+  }
+  .btn:active{transform:translateY(3px);box-shadow:0 4px 0 rgba(0,0,0,.18);}
+  .btn-primary{background:var(--orange);color:#2a1200;}
+  .btn-nav{padding:10px 20px;font-size:14px;background:var(--yellow);color:#3a2600;box-shadow:0 5px 0 rgba(0,0,0,.18);}
+
+  .sticker{
+    display:inline-flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+    background:var(--grape);color:#fff;border:4px solid var(--cream);border-radius:50%;
+    box-shadow:0 6px 0 rgba(0,0,0,.2);font-family:'Baloo 2',cursive;transform:rotate(-6deg);
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;padding:56px 0 20px;overflow:hidden;}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:24px;align-items:center;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);
+    padding:8px 16px;border-radius:999px;font-weight:800;font-size:13px;
+    letter-spacing:.03em;text-transform:uppercase;color:var(--yellow);margin-bottom:18px;
+  }
+  .hero h1{font-size:44px;font-weight:800;color:var(--cream);}
+  .hero h1 .hl{color:var(--yellow);}
+  .hero h1 .hl2{background:var(--pink);padding:2px 12px;border-radius:10px;display:inline-block;transform:rotate(-2deg);}
+  .hero p.lead{font-size:18px;margin:20px 0 24px;color:#dfe3ff;max-width:50ch;}
+  .price-row{display:flex;align-items:baseline;gap:14px;margin-bottom:6px;flex-wrap:wrap;}
+  .price-old{font-size:16px;color:#b9c0ff;text-decoration:line-through;}
+  .price-new{font-family:'Baloo 2',cursive;font-size:44px;font-weight:800;color:var(--yellow);}
+  .price-tag{font-size:13px;color:#c9cdfa;}
+  .under-hero-note{font-size:13px;color:#b9c0ff;margin-top:16px;}
+  .hero-art{position:relative;display:flex;justify-content:center;}
+  .hero-art .frame{position:relative;width:100%;max-width:400px;}
+  .hero-art .frame-img{border-radius:28px;overflow:hidden;box-shadow:0 20px 45px rgba(0,0,0,.35);}
+  .hero-art .frame img{width:100%;}
+  .bubble{
+    position:absolute;background:rgba(255,253,246,.95);color:var(--grape-deep);
+    font-family:'Baloo 2',cursive;font-weight:700;font-size:13px;line-height:1.2;
+    padding:10px 16px;border-radius:999px;box-shadow:0 6px 14px rgba(0,0,0,.25);
+    white-space:nowrap;
+  }
+  .bubble .hl{color:var(--orange);}
+  .bubble::after{
+    content:"";position:absolute;width:14px;height:14px;background:inherit;
+    border-radius:3px;bottom:-5px;left:26px;transform:rotate(45deg);
+  }
+  .bubble.b1{top:6%;left:-6%;transform:rotate(-4deg);}
+  .bubble.b2{top:24%;left:-10%;transform:rotate(3deg);}
+  .bubble.b3{top:41%;left:-8%;transform:rotate(-3deg);}
+
+  .feature-strip{
+    display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
+    background:rgba(255,255,255,.06);border:1px solid var(--line);
+    border-radius:20px;padding:20px 28px;margin:36px 0 0;
+  }
+  .feature-strip .f-item{display:flex;flex-direction:column;align-items:center;gap:8px;flex:1;min-width:110px;text-align:center;}
+  .feature-strip .f-ic{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;}
+  .feature-strip .f-item span{font-size:13px;font-weight:800;color:#eef;}
+
+  section{position:relative;padding:64px 0;}
+  .section-eyebrow{display:block;font-weight:800;color:var(--yellow);text-transform:uppercase;letter-spacing:.05em;font-size:13px;margin-bottom:10px;}
+  .section-title{font-size:32px;font-weight:800;margin-bottom:14px;}
+  .section-sub{color:#dfe3ff;font-size:17px;max-width:65ch;margin:0 auto 40px;}
+  .band{background:rgba(0,0,0,.16);}
+
+  .panel{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:24px;padding:36px 40px;}
+  .check-list{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 40px;margin:0;padding:0;}
+  .check-list li{list-style:none;display:flex;gap:14px;align-items:flex-start;font-size:16px;font-weight:600;}
+  .check-list .em{font-size:22px;flex:none;line-height:1.3;}
+  .pain-callout{margin-top:30px;font-family:'Baloo 2',cursive;font-weight:700;font-size:20px;color:var(--yellow);text-align:center;}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;}
+  .step-col{text-align:center;padding:0 24px;position:relative;}
+  .step-col + .step-col::before{content:"";position:absolute;left:0;top:10px;bottom:10px;width:1px;background:var(--line);}
+  .step-emoji{font-size:38px;margin-bottom:14px;}
+  .step-col h3{font-size:19px;margin-bottom:8px;color:#fff;}
+  .step-col p{font-size:14px;color:#d7dbff;}
+
+  .inc-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px 40px;margin:0;padding:0;}
+  .inc-grid li{list-style:none;display:flex;gap:12px;align-items:center;font-weight:700;font-size:15px;}
+  .inc-ic{width:38px;height:38px;border-radius:12px;flex:none;display:flex;align-items:center;justify-content:center;font-size:18px;}
+
+  .bonus-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+  .bonus-card{background:var(--cream);color:var(--ink);border-radius:22px;padding:26px;box-shadow:0 12px 0 rgba(0,0,0,.16);min-width:0;}
+  .bonus-cover{width:100%;border-radius:14px;margin-bottom:18px;box-shadow:0 8px 16px rgba(0,0,0,.15);}
+  .bonus-label{display:inline-block;background:var(--pink);color:#fff;font-family:'Baloo 2',cursive;font-weight:800;font-size:12px;padding:5px 12px;border-radius:999px;margin-bottom:14px;}
+  .bonus-card h3{font-size:19px;margin-bottom:8px;color:var(--grape-deep);}
+  .bonus-card p{font-size:14px;color:#3a3a55;margin-bottom:14px;}
+  .bonus-value .old{text-decoration:line-through;color:#6f6f8a;font-weight:700;margin-right:6px;}
+  .bonus-value .free{color:#178048;font-weight:800;}
+
+  .fit-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;}
+  .fit-card{border-radius:22px;padding:30px;border:2px solid;}
+  .fit-yes{background:rgba(47,196,107,.08);border-color:var(--green);}
+  .fit-no{background:rgba(255,79,147,.06);border-color:var(--pink);}
+  .fit-card h3{font-size:19px;margin-bottom:16px;}
+  .fit-card ul{list-style:none;margin:0;padding:0;}
+  .fit-card li{margin-bottom:12px;font-size:15px;display:flex;gap:10px;font-weight:600;}
+
+  .quote{font-size:17px;font-style:italic;color:#e7e9ff;max-width:60ch;}
+
+  .offer-box{background:linear-gradient(160deg, var(--grape), var(--grape-deep));border-radius:32px;padding:52px;}
+  .offer-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;}
+  .offer-list{list-style:none;padding:0;margin:0 0 6px;}
+  .offer-list li{padding:7px 0;font-weight:700;font-size:15px;display:flex;gap:10px;}
+  .offer-art{display:flex;justify-content:center;}
+  .offer-art img{max-width:340px;filter:drop-shadow(0 16px 20px rgba(0,0,0,.3));}
+  .offer-price-card{background:var(--cream);color:var(--ink);border-radius:24px;padding:32px;text-align:center;box-shadow:0 12px 0 rgba(0,0,0,.2);}
+  .offer-price-card .old{color:#6f6f8a;text-decoration:line-through;font-size:16px;font-weight:700;}
+  .offer-price-card .new{font-family:'Baloo 2',cursive;font-size:50px;font-weight:800;color:var(--grape-deep);}
+  .offer-price-card .pm{font-size:13px;color:#6a6a80;margin-bottom:20px;}
+  .pay-icons{display:flex;justify-content:center;gap:14px;margin-top:16px;font-size:13px;font-weight:700;color:#5a5a72;}
+
+  .guarantee{display:flex;gap:26px;align-items:center;}
+  .shield{font-size:50px;flex:none;}
+
+  .faq-item{border-bottom:1px solid var(--line);padding:18px 0;}
+  .faq-q{
+    display:flex;width:100%;justify-content:space-between;align-items:center;cursor:pointer;
+    font-family:'Baloo 2',cursive;font-weight:700;font-size:17px;color:#fff;
+    background:none;border:none;padding:0;text-align:left;
+  }
+  .faq-q .plus{font-size:22px;color:var(--yellow);transition:transform .2s;flex:none;margin-left:16px;}
+  .faq-item.open .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;font-size:15px;color:#d7dbff;}
+  .faq-item.open .faq-a{max-height:200px;padding-top:10px;}
+
+  .final-cta h2{font-size:28px;max-width:24ch;margin:0 auto 28px;}
+
+  footer{padding:32px 0;text-align:center;font-size:13px;color:#a9adf0;border-top:1px solid var(--line);}
+  footer a{text-decoration:underline;}
+  .cross-note{font-size:12px;color:#9297d8;margin-top:8px;}
+
+  @media (max-width: 880px){
+    .hero-grid,.offer-grid,.fit-grid{grid-template-columns:minmax(0,1fr);}
+    .check-list,.inc-grid{grid-template-columns:minmax(0,1fr);}
+    .steps{grid-template-columns:minmax(0,1fr);gap:28px;}
+    .step-col + .step-col::before{display:none;}
+    .bonus-grid{grid-template-columns:minmax(0,1fr);}
+    .hero h1{font-size:30px;}
+    .section-title{font-size:24px;}
+    .offer-box{padding:26px;}
+    .feature-strip{padding:20px;}
+    .hero{padding-top:36px;}
+    .hero-art{order:-1;margin-top:8px;}
+    .hero-art .frame{max-width:260px;}
+    .bubble{font-size:11px;padding:8px 12px;}
+    .bubble.b1{left:2%;}
+    .bubble.b2{left:-4%;}
+    .bubble.b3{left:0%;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <div class="logo">🌱 Sementinhas da Fé</div>
+    <a href="#oferta" class="btn btn-nav">Quero o kit</a>
+  </div>
+</nav>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">✨ kit digital de atividades bíblicas</div>
+      <h1>Aproxime <span class="hl">seus filhos</span> de Deus, <span class="hl2">trocando telas</span> por momentos com a Palavra</h1>
+      <p class="lead">Mais de 400 atividades bíblicas prontas para imprimir — ensinam valores, ocupam a mente e tiram a criança do celular, sem brigas e sem uma tela a mais.</p>
+      <div class="price-row">
+        <span class="price-old">De R$ 97,00</span>
+        <span class="price-new">R$ 29,90</span>
+      </div>
+      <div class="price-tag" style="margin-bottom:22px;">pagamento único · à vista</div>
+      <a href="#oferta" class="btn btn-primary">🔓 Quero acessar agora!</a>
+      <div class="under-hero-note">🔒 Pagamento 100% seguro · Acesso imediato por e-mail · Garantia de 7 dias</div>
+    </div>
+    <div class="hero-art">
+      <div class="frame">
+        <div class="frame-img">
+          <img
+            src="assets/hero-800.jpg"
+            srcset="assets/hero-480.jpg 480w, assets/hero-800.jpg 800w, assets/hero-1024.jpg 1024w"
+            sizes="(max-width: 880px) 260px, 400px"
+            width="1024" height="1536"
+            fetchpriority="high"
+            alt="Jesus com crianças, tela com vídeo bíblico e mockups do kit de atividades para imprimir">
+        </div>
+        <div class="bubble b1">+400 atividades <span class="hl">bíblicas</span>!</div>
+        <div class="bubble b2">Zero telas, <span class="hl">zero briga</span> 💛</div>
+        <div class="bubble b3">Só imprimir <span class="hl">e usar</span> 🖨️</div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="feature-strip">
+      <div class="f-item"><div class="f-ic" style="background:var(--green);">📖</div><span>Atividades divertidas e educativas</span></div>
+      <div class="f-item"><div class="f-ic" style="background:var(--pink);">❤️</div><span>Fortalece a fé e os valores</span></div>
+      <div class="f-item"><div class="f-ic" style="background:var(--orange);">👨‍👩‍👧</div><span>Cria laços em família</span></div>
+      <div class="f-item"><div class="f-ic" style="background:var(--royal);">⬇️</div><span>Acesso imediato 100% online</span></div>
+      <div class="f-item"><div class="f-ic" style="background:var(--yellow);color:#3a2600;">⭐</div><span>Para todas as idades</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="section-eyebrow center" style="text-align:center;display:block;">um recado rápido</span>
+    <h2 class="section-title center">Se hoje seu filho já disse "só mais 5 minutinhos" umas 20 vezes, você não está sozinho(a) 💛</h2>
+    <div class="panel" style="margin-top:32px;">
+      <ul class="check-list">
+        <li><span class="em">😔</span> Você sabe que tela demais não faz bem, mas não tem o que oferecer no lugar.</li>
+        <li><span class="em">📱</span> Sente que o tempo de família virou "cada um com seu celular".</li>
+        <li><span class="em">💭</span> Quer ensinar valores e histórias bíblicas, mas a rotina corrida não ajuda.</li>
+        <li><span class="em">🗂️</span> Já tentou atividades da internet, mas eram fracas ou não tinham nada de Bíblia.</li>
+      </ul>
+      <p class="pain-callout">E se existisse algo pronto, bonito e biblicamente sólido — só imprimir (ou abrir no tablet) e entregar pro seu filho? 🌈</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap center">
+    <span class="section-eyebrow">a solução</span>
+    <h2 class="section-title">Conheça o Sementinhas da Fé</h2>
+    <p class="section-sub" style="margin-left:auto;margin-right:auto;">Um kit com mais de <strong>400 atividades bíblicas</strong>, pensado para crianças de <strong>3 a 10 anos</strong>, que ensina histórias e valores da Bíblia de um jeito leve, colorido e divertido — sem precisar de mais uma tela.</p>
+    <div class="steps">
+      <div class="step-col">
+        <div class="step-emoji">📩</div>
+        <h3>Chega no seu e-mail</h3>
+        <p>PDF liberado automaticamente assim que a compra é aprovada.</p>
+      </div>
+      <div class="step-col">
+        <div class="step-emoji">🖨️</div>
+        <h3>Pode imprimir</h3>
+        <p>Uso ilimitado — imprima quantas vezes quiser, para todos os filhos ou alunos.</p>
+      </div>
+      <div class="step-col">
+        <div class="step-emoji">🎉</div>
+        <h3>Hora da diversão</h3>
+        <p>É só entregar pra criança e aproveitar momentos de aprendizado em família.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap center">
+    <span class="section-eyebrow">o que está incluso</span>
+    <h2 class="section-title" style="margin-bottom:32px;">Tudo isso já vem pronto pra você 🎁</h2>
+    <div class="panel" style="text-align:left;">
+      <ul class="inc-grid">
+        <li><div class="inc-ic" style="background:var(--green);">🎨</div> Atividades para colorir com temas bíblicos</li>
+        <li><div class="inc-ic" style="background:var(--pink);">🧩</div> Caça-palavras e labirintos bíblicos</li>
+        <li><div class="inc-ic" style="background:var(--orange);">📖</div> Histórias ilustradas para ler com a criança</li>
+        <li><div class="inc-ic" style="background:var(--royal);">❓</div> Quiz bíblico dividido por idade</li>
+        <li><div class="inc-ic" style="background:var(--yellow);color:#3a2600;">♾️</div> Acesso vitalício ao material</li>
+        <li><div class="inc-ic" style="background:var(--grape);">🖼️</div> Ilustrações fofas em estilo animado</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap center">
+    <span class="section-eyebrow">de bônus, só hoje</span>
+    <h2 class="section-title" style="margin-bottom:32px;">Você também leva de presente 🎀</h2>
+    <div class="bonus-grid" style="text-align:left;">
+      <div class="bonus-card">
+        <img class="bonus-cover" src="assets/bonus-1-pintando-a-palavra.jpg" width="560" height="839" loading="lazy" decoding="async" alt="Capa do caderno Pintando a Palavra">
+        <span class="bonus-label">BÔNUS #1</span>
+        <h3>🖍️ Pintando a Palavra</h3>
+        <p>Livro de colorir bíblico, com desenhos das principais histórias das Escrituras.</p>
+        <div class="bonus-value"><span class="old">R$17</span><span class="free">grátis hoje</span></div>
+      </div>
+      <div class="bonus-card">
+        <img class="bonus-cover" src="assets/bonus-2-minha-jornada.jpg" width="560" height="839" loading="lazy" decoding="async" alt="Capa do caderno Minha Jornada na Bíblia">
+        <span class="bonus-label">BÔNUS #2</span>
+        <h3>🧭 Minha Jornada na Bíblia</h3>
+        <p>Apostila de atividades para a criança acompanhar sua caminhada de fé.</p>
+        <div class="bonus-value"><span class="old">R$49</span><span class="free">grátis hoje</span></div>
+      </div>
+      <div class="bonus-card">
+        <img class="bonus-cover" src="assets/bonus-3-conversando-com-deus.jpg" width="560" height="839" loading="lazy" decoding="async" alt="Capa do caderno Conversando com Deus">
+        <span class="bonus-label">BÔNUS #3</span>
+        <h3>🙏 Conversando com Deus</h3>
+        <p>Manual de oração infantil, para a criança aprender a orar com as próprias palavras.</p>
+        <div class="bonus-value"><span class="old">R$27</span><span class="free">grátis hoje</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap center">
+    <span class="section-eyebrow">esse kit é pra você</span>
+    <h2 class="section-title" style="margin-bottom:32px;">Vamos ver se combina com você 🤔</h2>
+    <div class="fit-grid" style="text-align:left;">
+      <div class="fit-card fit-yes">
+        <h3>✅ ...que:</h3>
+        <ul>
+          <li>👪 Quer diminuir o tempo de tela dos filhos sem brigar todo dia.</li>
+          <li>📖 Deseja inserir a Bíblia na rotina da família de forma leve.</li>
+          <li>🎨 Procura atividades prontas e bonitas, já com o trabalho pedagógico feito.</li>
+          <li>⏳ Tem uma rotina corrida e precisa de algo prático para imprimir na hora.</li>
+        </ul>
+      </div>
+      <div class="fit-card fit-no">
+        <h3>🚫 Não é para:</h3>
+        <ul>
+          <li>— Quem busca um curso teológico avançado ou material para adultos.</li>
+          <li>— Quem não pretende dedicar nenhum tempo junto com a criança.</li>
+          <li>— Quem espera atividades sem nenhuma referência bíblica ou cristã.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap center">
+    <span class="section-eyebrow">quem está por trás disso</span>
+    <h2 class="section-title" style="font-size:24px;margin-bottom:20px;">Sobre quem criou o Sementinhas da Fé</h2>
+    <p class="quote" style="margin:0 auto;">🌱 "Somos apaixonados por família e educação infantil, dedicados a criar recursos que aproximam crianças da Bíblia de um jeito leve e divertido. O Sementinhas da Fé nasceu do desejo de ajudar pais e educadoras a transformarem o tempo de tela em momentos de conexão, aprendizado e fé."</p>
+  </div>
+</section>
+
+<section id="oferta" class="band">
+  <div class="wrap">
+    <div class="offer-box">
+      <div class="offer-grid">
+        <div>
+          <span class="section-eyebrow" style="color:var(--yellow);">plano completo</span>
+          <h2 class="section-title" style="font-size:26px;margin-bottom:20px;">Super Oferta 🌟</h2>
+          <ul class="offer-list">
+            <li>✔️ +400 atividades bíblicas</li>
+            <li>✔️ Bônus #1 — Pintando a Palavra</li>
+            <li>✔️ Bônus #2 — Minha Jornada na Bíblia</li>
+            <li>✔️ Bônus #3 — Conversando com Deus</li>
+            <li>✔️ Acesso vitalício</li>
+            <li>✔️ Garantia de 7 dias</li>
+          </ul>
+        </div>
+        <div class="offer-price-card">
+          <div class="old">Valor total: R$ 97,00</div>
+          <div class="new">R$ 29,90</div>
+          <div class="pm">pagamento único · acesso imediato no e-mail</div>
+          <!-- TODO: link do checkout -->
+          <a href="#" class="btn btn-primary" style="width:100%;">SIM! QUERO ESSA SUPER OFERTA!</a>
+          <div class="pay-icons"><span>📱 PIX</span><span>💳 Cartão</span><span>🧾 Boleto</span></div>
+        </div>
+      </div>
+      <div class="offer-art" style="margin-top:36px;">
+        <img src="assets/mockups-cutout.png" loading="lazy" decoding="async" alt="Cadernos e telas com as atividades bíblicas do kit">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="guarantee">
+      <div class="shield">🛡️</div>
+      <div>
+        <h3 style="font-family:'Baloo 2',cursive;font-size:22px;margin-bottom:8px;">Risco zero pra você</h3>
+        <p>O pagamento é único e, se por qualquer motivo você não gostar do material, tem <strong>7 dias de garantia</strong> para pedir reembolso total, sem perguntas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="section-eyebrow center" style="text-align:center;display:block;">perguntas frequentes</span>
+    <h2 class="section-title center" style="margin-bottom:32px;">Ainda com dúvidas? 💬</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-1">Preciso imprimir tudo? <span class="plus" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-1">Não! Você pode imprimir só o que quiser usar no momento, ou abrir as atividades direto no tablet ou celular, se preferir manter tudo digital.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-2">Para qual idade é indicado? <span class="plus" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-2">O kit foi pensado para crianças de 3 a 10 anos, com atividades divididas por faixa etária para respeitar o momento de cada criança.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-3">É só uma vez ou tem atualização? <span class="plus" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-3">Sua compra dá acesso vitalício ao material, incluindo eventuais atualizações e melhorias feitas no conteúdo.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-4">Como recebo depois de comprar? <span class="plus" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-4">Assim que o pagamento for aprovado, você recebe o acesso ao material diretamente no e-mail cadastrado na compra.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-5">Funciona em qualquer denominação cristã? <span class="plus" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-5">Sim. O conteúdo foi criado com base em histórias e valores bíblicos centrais à fé cristã, sem viés denominacional.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta center">
+  <div class="wrap">
+    <h2>Seu filho vai lembrar dessas tardes — não do último vídeo que assistiu no YouTube. 💛</h2>
+    <a href="#oferta" class="btn btn-primary">QUERO O SEMENTINHAS DA FÉ — R$ 29,90</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    🌱 Sementinhas da Fé — Todos os direitos reservados.<br>
+    <a href="#">Política de Privacidade</a> · <a href="#">Termos de Uso</a>
+    <div class="cross-note">Este site não faz parte do Facebook ou Facebook, Inc. Não é endossado pelo Facebook de forma alguma.</div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-item').forEach(item=>{
+    const btn = item.querySelector('.faq-q');
+    btn.addEventListener('click',()=>{
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i=>{
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded','false');
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

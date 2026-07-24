@@ -78,7 +78,22 @@
   .price-tag{font-size:13px;color:#c9cdfa;}
   .under-hero-note{font-size:13px;color:#b9c0ff;margin-top:16px;}
   .hero-art{position:relative;display:flex;justify-content:center;}
-  .hero-art .frame{position:relative;width:100%;max-width:400px;}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+  .hero-stack{display:flex;flex-direction:column;align-items:center;text-align:center;}
+  .hero-stack .eyebrow{margin-bottom:22px;}
+  .hero-stack .lead{margin:22px auto 8px;max-width:60ch;}
+  .hero-stack .hero-art{margin:28px 0 6px;}
+  .hero-stack .under-hero-note{margin-top:18px;}
+
+  .price-block{margin:20px 0 26px;}
+  .price-block-old{font-size:20px;color:#ff8a8a;text-decoration:line-through;font-weight:800;}
+  .price-block-label{font-size:16px;color:#dfe3ff;font-weight:700;margin:4px 0;}
+  .price-block-new{font-family:'Baloo 2',cursive;font-size:64px;font-weight:800;color:var(--yellow);line-height:1;}
+  .price-block-note{font-size:15px;color:var(--green);font-weight:800;margin-top:6px;}
+
+  .btn-big{font-size:20px;padding:20px 42px;}
+
+  .hero-art .frame{position:relative;width:100%;max-width:460px;}
   .hero-art .frame-img{border-radius:28px;overflow:hidden;box-shadow:0 20px 45px rgba(0,0,0,.35);}
   .hero-art .frame img{width:100%;}
   .bubble{
@@ -194,8 +209,10 @@
     .offer-box{padding:26px;}
     .feature-strip{padding:20px;}
     .hero{padding-top:36px;}
-    .hero-art{order:-1;margin-top:8px;}
     .hero-art .frame{max-width:260px;}
+    .price-block-new{font-size:44px;}
+    .price-block-old{font-size:16px;}
+    .btn-big{font-size:17px;padding:16px 30px;}
     .bubble{font-size:11px;padding:8px 12px;}
     .bubble.b1{left:2%;}
     .bubble.b2{left:-4%;}
@@ -213,29 +230,26 @@
 </nav>
 
 <section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow">✨ kit digital de atividades bíblicas</div>
-      <h1>Aproxime <span class="hl">seus filhos</span> de Deus, <span class="hl2">trocando telas</span> por momentos com a Palavra</h1>
-      <p class="lead">Mais de 100 atividades bíblicas prontas para imprimir — ensinam valores, ocupam a mente e tiram a criança do celular, sem brigas e sem uma tela a mais.</p>
-      <div class="price-row">
-        <span class="price-old">De R$ 67,00</span>
-        <span class="price-new">R$ 19,90</span>
-      </div>
-      <div class="price-tag" style="margin-bottom:22px;">pagamento único · à vista</div>
-      <a href="#oferta" class="btn btn-primary">🔓 Quero acessar agora!</a>
-      <div class="under-hero-note">🔒 Pagamento 100% seguro · Acesso imediato por e-mail · Garantia de 7 dias</div>
-    </div>
+  <div class="wrap hero-stack">
+    <h1 class="center">Aproxime <span class="hl">seus filhos</span> de Deus, <span class="hl2">trocando telas</span> por momentos com a Palavra</h1>
+
     <div class="hero-art">
       <div class="frame">
         <div class="frame-img">
-          <img src="assets/hero-full.png" alt="Jesus com crianças, tela com vídeo bíblico e mockups do kit de atividades para imprimir">
+          <img src="assets/hero-full.png" alt="Kit digital de atividades bíblicas infantis: mais de 100 atividades prontas para imprimir, com Jesus e crianças, mockups do material e preço de R$19,90">
         </div>
-        <div class="bubble b1">+100 atividades <span class="hl">bíblicas</span>!</div>
-        <div class="bubble b2">Zero telas, <span class="hl">zero briga</span> 💛</div>
-        <div class="bubble b3">Só imprimir <span class="hl">e usar</span> 🖨️</div>
       </div>
     </div>
+
+    <div class="price-block">
+      <div class="price-block-old">De R$ 67,00</div>
+      <div class="price-block-label">por apenas</div>
+      <div class="price-block-new">R$ 19,90</div>
+      <div class="price-block-note">e com garantia de 7 dias!</div>
+    </div>
+
+    <a href="#oferta" class="btn btn-primary btn-big">🔓 Quero acessar agora!</a>
+    <div class="under-hero-note center">🔒 Pagamento 100% seguro · Acesso imediato por e-mail · Garantia de 7 dias</div>
   </div>
   <div class="wrap">
     <div class="feature-strip">
